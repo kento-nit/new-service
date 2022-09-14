@@ -1,0 +1,35 @@
+8,,,
+,question,answer,comment
+1,"モジュールを使う際は、
+import  “モジュール名”
+で読み込む。",1,
+2,"モジュールからある関数のみを使用する際には、
+import choice as random
+のように記述する。",0,
+3,"import random
+print(random.randint(1,100))
+を実行すると、0~99の値がランダムで出力される。",0,
+4,現在時刻や日付を取得するモジュールはdata timeである。,1,
+5,"現在何時かを取得するためには、hour.代入した変数で求められる、
+例
+from datetime import datetime
+ima = datetime.now()
+print(hour.ima, '時')",0,
+6,日付データを文字列に変換するには、strftime()メソッドを使う。,1,
+7,"Datetimeの日付データにおいて、次の日を求めたい場合は以下のように単純に足し算すればよい。
+from?datetime?import?datetime
+from?datetime?import timedelta
+
+one_day = datetime(2018, 11, 6)
+next_day = one_day +1",0,
+8,もともとpythonに搭載されているライブラリのことを、標準ライブラリと呼ぶ。,1,
+9,"標準ライブラリを使用する時は、
+pip install ライブラリ名
+と記述しなければならない。",0,
+10,"alphabet = [""a"", ""b"", ""c"", ""d"", ""e""]
+print(random.choice(alphabet))
+これを実行するとアルファベットがランダムで並び替えられる。
+",1,
+,,,
+,,,
+,,,

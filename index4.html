@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイトル</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+    body{
+        
+        padding: 30px;
+        padding-top: 70px;
+        background-color: white;
+    }
+    .starter-template{
+        padding: 40px 15px;
+        background-color:rgb(223, 231, 231);
+    }
+    .header{
+        background-color:rgb(158, 250, 250);
+    }
+    .difficulty{
+    }
+    .comment1{
+        visibility: hidden;
+    }
+    .radio{
+        visibility: visible;
+    }
+    .true{
+        visibility: hidden;
+    }
+    .false{
+        visibility: hidden;
+    }
+    .right{
+    float: right;
+    }
+    p{
+        font-weight: bold;
+        font-size: 120%;
+        font-family: serif;
+        margin: 40px;
+}
+    </style>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <div class="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img  src="imgs/CLearnロゴ.png"alt="CLearn"width="30%"height="30%">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <div class="row-sm0-4">
+            <div class="col-sm-4">
+                <div class="difficulty">
+                    <h1"style=background-colour:#00FF00">かんたん</h1>
+                </div>        
+            </div>
+        </div>
+        <div class="row-sm0-4">
+            <div class="col-sm-6">
+            <h2>問題4</h2>
+            <p>次の文章は〇か×か</p>
+            </div>
+        </div>
+        <div class="starter-template">
+            <div class="row-sm-4">
+                <div class="col-sm-12">
+                    <div>
+                        <span class="true" id="true">
+                            <h1>正解</h1>
+                        </span>
+                        <span class="false" id="false">
+                            <h1>不正解</h1>
+                        </span>
+                    </div>
+
+                    <form name="userAnswer">
+                        <p>
+                            辞書型の項目を削除するときはdel を用いる。<br>
+                            例<br>
+                            personal ={"名前": "太郎", "誕生日": "199x年5月13日"}<br>
+                            del personal("誕生日")
+                        </p>
+                        <span class="comment1" id="comment1">
+                            <p>
+                                問題４のコメント
+                            </p>
+                        </span>
+                        <div align="right" class="radio" id="radio">
+                            <input type="radio" name="question" value="1">まる
+                            <input type="radio" name="question" value="0">ばつ
+                        </div>
+                        <div id="radio" class="radio">
+                            <input type="button" class="radio"  value="回答する！" onClick="answer(1);">
+                        </div>
+                        <form id="question">
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="row-sm-4">
+                <div class="col-sm-4">
+                    <a href="index5.html" target="blank">
+                        <button type="button" class="btn btn-primary">次の問題へ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
